@@ -1,0 +1,5 @@
+<h2> <%= @cocktail.name %></h2>
+<!-- <p> <%#= @doses %> </p> -->
+<%= link_to 'Show ingredients', cocktail_doses_path(@cocktail) %> <br>
+
+<%= link_to 'Back', cocktails_path, class: "btn btn-danger" %>
