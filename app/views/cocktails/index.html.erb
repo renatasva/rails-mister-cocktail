@@ -1,10 +1,17 @@
-<div>
-<h1 style="text-align:center">Exotic Cocktails</h1>
+<div class="banner">
+  <div class="banner-content">
+    <h1>Exotic Cocktails</h1>
+    <a href="#cocktails" class="button">Let's have a drink!</a>
+  </div>
+</div>
+
+
+<div class="cocktails-container" id="cocktails">
 
 <% @cocktails.each do |cocktail| %>
     <h3> <%= cocktail.name %> </h3>
     <p> <%= link_to 'Show recipe', cocktail %> </p>
 <% end %>
-</div>
 <br>
 <%= link_to 'Create a new cocktail', new_cocktail_path, class: "btn btn-success btn-sm" %>
+</div>
