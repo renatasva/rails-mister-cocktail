@@ -1,15 +1,17 @@
+<div class="show-container">
 <h2>Add new ingredient</h2>
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <div class="form-inputs">
-    <p><%= f.association :ingredient %></p>
-    <p><%= f.input :description %></p>
+    <p><%= f.association :ingredient, :input_html => {:style=> 'width: 500px', class: 'form-design'} %></p>
+    <p><%= f.input :description, :input_html => {:style=> 'width: 500px', class: 'form-design'} %></p>
   </div>
 
   <div class="form-actions">
-    <%= f.submit 'Add ingredient', class: "btn btn-primary" %>
+    <%= f.submit 'Add ingredient', class: "button-main" %>
 
   </div>
 <% end %>
 <br>
-<%= link_to 'Back', @cocktail, class: "btn btn-success" %>
+<%= link_to '', @cocktail, class: "button-back fas fa-arrow-circle-left" %>
+</div>

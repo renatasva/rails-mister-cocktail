@@ -3,7 +3,7 @@
   cursor: pointer;
   display: inline-block;
   background: linear-gradient(180deg,#564664 0.5899705014749262%,#5b496a 49%,#52425f 51%,#2b2530 100%);
-  border-radius: 5px;
+  border-radius: 50px;
   border: 1px solid #332448;
   border-width: 1px 1px 1px 1px;
   padding: 10px 30px 10px 30px;
@@ -26,14 +26,15 @@
   cursor: pointer;
   display: inline-block;
   background: linear-gradient(180deg,#1B272E 0.5899705014749262%,#1B272E 49%,#1B272E 51%,#495A67 80%);
-  border-radius: 5px;
+  border-radius: 50px;
   border: 1px solid #1A242B;
   border-width: 1px 1px 1px 1px;
   padding: 10px 30px 10px 30px;
   box-shadow: inset 0px 1px 0px #344957,0px 1px 3px rgba(0%,0%,0%,0.3);
   color: #F3F3F3;
   font-size: 20px;
-  font-family: 'KoHo', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
   text-shadow: 0px -1px 0px rgba(0,0,0,0.4)
   }
 
@@ -42,3 +43,27 @@
     text-decoration: none;
     opacity: 0.85;
   }
+
+.button-back {
+  color: white;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  opacity: 0.6;
+  &:hover {
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+  }
+  &:visited {
+    color: white;
+    text-decoration: none;
+    opacity: 0.85;
+  }
+}
+
+

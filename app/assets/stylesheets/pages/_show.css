@@ -4,7 +4,6 @@
   margin-top: 80px;
   align-items: center;
 }
-
 .title {
   text-align: center;
 }
@@ -15,11 +14,9 @@
   background-position: center;
   position: relative;
 }
-
 .ingredients {
   margin: 20px;
 }
-
 .remove-link {
   color: white;
   border-radius: 50%;
@@ -40,4 +37,7 @@
     text-decoration: none;
     opacity: 1;
   }
+}
+.row {
+  margin-bottom: 15px;
 }

@@ -10,11 +10,11 @@
         <% @dose.each do |dose| %>
           <p><strong> <%= dose.ingredient.name %> </strong>
           <%= dose.description %>
-          <%= link_to '', cocktail_dose_path(dose.cocktail, dose), method: :delete, data: { confirm: "Are you sure??" }, class: "far fa-trash-alt remove-link" %></p>
+          <%= link_to '', cocktail_dose_path(dose.cocktail, dose), method: :delete, class: "far fa-trash-alt remove-link sweet-alert-demo" %></p>
         <% end %>
-        <%= link_to 'Add new ingredient', new_cocktail_dose_path(@cocktail), class: "btn btn-success btn-sm" %>
+        <%= link_to 'Add new ingredient', new_cocktail_dose_path(@cocktail), class: "button-main btn-sm" %>
       </div>
     </div>
   </div>
-  <%= link_to 'Back', cocktails_path, class: "btn btn-danger" %>
+  <%= link_to '', cocktails_path, class: "button-back fas fa-arrow-circle-left" %>
 </div>
