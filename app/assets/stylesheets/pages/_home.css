@@ -1,0 +1,31 @@
+// Specific CSS for your home-page
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: #24343E;
+  color: white;
+  margin: 0 0 100px;
+font-family: 'Quicksand', sans-serif;
+}
+
+.cocktails-container {
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding-top: 70px;
+  padding-bottom: 40px;
+}
+
+.create-new {
+  text-align: center;
+}
+
+.create-new h3 {
+  font-family: 'Parisienne', cursive;
+  font-size: 30px;
+}

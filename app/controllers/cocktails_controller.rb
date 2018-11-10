@@ -6,7 +6,7 @@ class CocktailsController < ApplicationController
 
   def show
     @cocktail = Cocktail.find(params[:id])
-    @doses = @cocktail.doses
+    @dose = @cocktail.doses
     # because cocktail has many doses
   end
 
@@ -23,9 +23,18 @@ class CocktailsController < ApplicationController
     end
   end
 
+  def destroy
+    @cocktail = Cocktail.find(params[:id])
+    @cocktail.destroy
+    respond_to do |format|
+      format.html { redirect_to cocktails_url, notice: "Cocktail was successfully destroyed." }
+      format.json { head :no_content }
+    end
+  end
+
   private
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end
