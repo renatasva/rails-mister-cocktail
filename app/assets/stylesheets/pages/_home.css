@@ -5,20 +5,27 @@ html {
 }
 
 body {
-  background: #24343E;
-  color: white;
+  background: #141414;
+  color: #EAE7E7;
   margin: 0 0 100px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 300;
 }
 
+p {
+  line-height: 1.7em;
+}
+
+.stronger-text {
+  font-weight: 500;
+}
 .cocktails-container {
   align-items: center;
   width: 1200px;
   margin: 0 auto;
   margin-top: 30px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -27,6 +34,6 @@ body {
 }
 
 .create-new h3 {
-  font-family: 'Parisienne', cursive;
-  font-size: 30px;
+  font-family: 'Sacramento', cursive;
+  font-size: 35px;
 }

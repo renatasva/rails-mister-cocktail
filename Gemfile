@@ -41,6 +41,7 @@ gem 'bootstrap-sass', '~> 3.3.7'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 
+gem 'select2-rails'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 

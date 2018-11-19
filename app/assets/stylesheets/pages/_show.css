@@ -15,17 +15,18 @@
   position: relative;
 }
 .ingredients {
-  margin: 20px;
+  margin-left: 20px;
 }
 .remove-link {
   color: white;
+  font-size: 12px;
   border-radius: 50%;
   border: 1px solid white;
-  display: flex;
+  display:inline-flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
   opacity: 0.8;
   &:hover {
     color: white;
@@ -40,4 +41,10 @@
 }
 .row {
   margin-bottom: 15px;
+}
+.description {
+  text-align: justify;
+}
+.description p {
+  font-size: 16px;
 }

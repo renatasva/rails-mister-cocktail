@@ -3,13 +3,11 @@
 
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <div class="form-inputs">
-    <p><%= f.association :ingredient, :input_html => {:style=> 'width: 500px', class: 'form-design'} %></p>
+    <p><%= f.association :ingredient, :input_html => { class: 'form-design select2'} %></p>
     <p><%= f.input :description, :input_html => {:style=> 'width: 500px', class: 'form-design'} %></p>
   </div>
-
   <div class="form-actions">
     <%= f.submit 'Add ingredient', class: "button-main" %>
-
   </div>
 <% end %>
 <br>

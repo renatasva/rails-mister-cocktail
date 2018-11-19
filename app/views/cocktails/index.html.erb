@@ -1,21 +1,22 @@
 <div class="banner">
   <div class="banner-content">
-    <h1>Exotic Cocktails</h1>
-    <a href="#cocktails" class="button">Let's have a drink!</a>
+    <h1>DRAMA BAR</h1>
+    <h4>Marylebone, London NW8 6JQ</h4>
   </div>
 </div>
 
 <div class="cocktails-container" id="cocktails">
-    <p><strong>Each drink is curated around inspirational characters and events, bringing to life journeys of discovery and adventure.</strong>
-    <br> Make your journey an exploration during the day by indulging our ‘tails of Discovery new cocktails menu. From morning to evening, escape to one of London’s most historic settings  and enjoy inspired and unique cocktails.</p>
+    <p class="stronger-text">Each drink is curated around inspirational characters and events, bringing to life journeys of discovery and adventure.</p>
+    <p>Make your journey an exploration during the day by indulging our ‘tails of Discovery new cocktails menu. From morning to evening, escape to one of London’s most historic settings  and enjoy inspired and unique cocktails.</p>
+    <br>
   <div class="row">
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-6 col-md-4">
-        <div class="card" style="background-image: linear-gradient(-20deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 70%), url(<%= cl_image_path cocktail.photo, crop: :fill unless cocktail.photo.blank? %>);">
+        <div class="card card-shadow" style="background-image: linear-gradient(-20deg, rgba(0,101,168,0.2) 0%, rgba(0,36,61,0.2) 70%), url(<%= cl_image_path cocktail.photo, crop: :fill unless cocktail.photo.blank? %>);">
           <div class="card-title">
             <h3> <%= link_to cocktail.name, cocktail, class: "card-link" %> </h3>
           </div>
-          <%= link_to '', cocktail, method: :delete, data: { confirm: "Are you sure??" }, class: "far fa-trash-alt card-remove-link" %>
+          <%= link_to '', cocktail, method: :delete, data: { confirm: "This cocktail will be permanently deleted. Do you want to continue?" }, class: "far fa-trash-alt card-remove-link" %>
         </div>
       </div>
     <% end %>
@@ -23,5 +24,5 @@
 </div>
 <div class="create-new">
   <h3> Have a better idea? </h3>
-  <%= link_to 'Create your own cocktail', new_cocktail_path, class: "button-new" %>
+  <center><%= link_to 'Create your own cocktail', new_cocktail_path, class: "btn btn3" %></center>
 </div>

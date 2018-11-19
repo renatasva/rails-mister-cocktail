@@ -1,5 +1,5 @@
 <div class="show-container">
-  <h1>Add new cocktail</h1>
+  <h1>Edit cocktail details</h1>
   <div class="form">
     <%= simple_form_for(@cocktail) do |f| %>
       <div class="form-inputs">
@@ -9,10 +9,9 @@
         <%= f.input :photo_cache, as: :hidden %>
       </div>
       <div class="form-actions">
-        <%= f.button :submit, class: "button-main" %>
+        <%= f.button :submit, class: "btn button-main" %>
       </div>
     <% end %>
-  </div>
-  <br>
+  </div><br>
   <%= link_to '', cocktails_path, class: "button-back fas fa-arrow-circle-left" %>
 </div>

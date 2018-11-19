@@ -1,20 +1,26 @@
 <div class="show-container">
-    <h2 class="title"> <%= @cocktail.name %></h2>
+    <h2 class="title"> <%= @cocktail.name %> <em><%= link_to '(Edit cocktail)', edit_cocktail_path, class: "button-edit" %></em></h2>
   <div class="row">
     <div class="col-sm-6 col-md-6">
-      <div class="image" style="background-image: url(<%= cl_image_path @cocktail.photo, crop: :fill unless @cocktail.photo.blank? %>)";>
+      <div class="image card-shadow" style="background-image: url(<%= cl_image_path @cocktail.photo, crop: :fill unless @cocktail.photo.blank? %>)";>
+      </div>
+      <br><br>
+
+    </div>
+    <div class="col-sm-6 col-md-6">
+      <div class="description">
+        <h4><em> About this cocktail: </em></h4>
+        <p> <%= @cocktail.description %> </p>
       </div>
     </div>
     <div class="col-sm-6 col-md-6">
       <div class="ingredients">
         <% @dose.each do |dose| %>
           <p><strong> <%= dose.ingredient.name %> </strong>
-          <%= dose.description %>
-          <%= link_to '', cocktail_dose_path(dose.cocktail, dose), method: :delete, class: "far fa-trash-alt remove-link sweet-alert-demo" %></p>
+          - <%= dose.description %> - <%= link_to '', cocktail_dose_path(dose.cocktail, dose), method: :delete, class: "far fa-trash-alt remove-link" %></p>
         <% end %>
         <%= link_to 'Add new ingredient', new_cocktail_dose_path(@cocktail), class: "button-main btn-sm" %>
       </div>
     </div>
   </div>
   <%= link_to '', cocktails_path, class: "button-back fas fa-arrow-circle-left" %>
-</div>

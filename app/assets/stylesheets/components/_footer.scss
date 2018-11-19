@@ -1,13 +1,12 @@
 .footer {
-  background: #25343E;
-  box-shadow: 0 -4px 5px 0 rgba(200, 200, 200,0.07),0 1px 0 0 rgba(200, 200, 200,0.03);
+  background: #181818;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
-  color: #DDE2E4;
+  color: #AFAFAF;
   font-size: 12px;
-  opacity: 0.4;
+
   position: absolute;
   left: 0;
   bottom: 0;
@@ -20,7 +19,7 @@
   align-items: center;
 }
 .footer-links a {
-  color: #DDE2E4;
+  color: #AFAFAF;
   opacity: 0.4;
   text-decoration: none;
   font-size: 20px;
@@ -28,6 +27,10 @@
 }
 
 .footer-links a:hover {
-  color: #DDE2E4;
+  color: #AFAFAF;
   opacity: 0.7;
+}
+
+.footer-copyright {
+  opacity: 0.6;
 }
